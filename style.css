@@ -65,3 +65,12 @@ body{
     text-align: right;
     align-items: right;
 }
+@media (max-width: 768px) {
+    .card-wraper {
+        width: 100%;
+        margin: 0;
+    }
+    .card-wraper-game{
+        height: 100vh;
+    }
+}
