@@ -61,9 +61,14 @@ body{
     padding: 15px 25px;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform .2s;
 }
 .link-wrap:last-child{
     margin-bottom: 70px;
+}
+.link-wrap:hover{
+    background-color: #78e3e31d;
+    transform: scale(1.05);
 }
 .social-link{
     width: 100%;
