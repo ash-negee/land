@@ -20,22 +20,30 @@
 
         <h3 class="heading username">Ash</h3>
 
-        <h4 class="heading caption">Long press and copy the text</h4>
+        <h4 class="heading caption">Long press and copy the text or tap the <i class="bi bi-clipboard"></i> button.</h4>
 
-        <div class="link-container">
+        <div class="link-container" id="link-container">
 
-            <div class="link-wrap">
+            <div class="link-wrap" id="copy-text-btn">
                 <div class="social-link">
-                    <span class="link-caption">BGMI &emsp;&emsp;&emsp;&emsp;&emsp; 5142794354</span>
-                    <i class="bi bi-controller link-icon"></i>
+                    <span class="link-caption" id="text">BGMI &emsp;&emsp;&emsp;&emsp;&emsp; 5142794354</span>
+                    <button class = "btn copy-btn" onclick="copyText('5142794354'); showCopied();">
+                        <i class="bi bi-clipboard link-icon"></i>
+                    </button>
                 </div>
             </div>
 
-            <div class="link-wrap">
+            <div class="link-wrap" id="copy-text-btn">
                 <div class="social-link">
-                    <span class="link-caption">PUBG Lite &emsp;&emsp;&emsp; 7187713463</span>
-                    <i class="bi bi-controller link-icon"></i>
+                    <span class="link-caption" id="text">PUBG Lite &emsp;&emsp;&emsp; 7187713463</span>
+                    <button class = "btn copy-btn" onclick="copyText('7187713463'); showCopied()">
+                        <i class="bi bi-clipboard link-icon"></i>
+                    </button>
                 </div>
+            </div>
+
+            <div class = "copied-prompt" id="copied-prompt" style="text-align: center; color: white; font-size: 12px; margin-bottom: 20px;">
+                Copied to clipboard
             </div>
         
         </div>
